@@ -1,6 +1,6 @@
 import useFetch from '../../../hooks/useFetch';
 import { useState, useEffect } from "react";
-import UsersTable from "../../../component/partials/users/usersTable";
+import UsersTable from "../../../component/partials/users/UsersTable";
 
 const users_url = `${import.meta.env.VITE_SERVER_URL}/users/customers-for-managers`
 

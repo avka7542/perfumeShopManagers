@@ -38,15 +38,15 @@ function UsersTable({ data }) {
     onOpen()
   }
 
-  // const handleDeleteUser = async(userId) => {
-  //   try {
-  //     await axios.delete
-  //     (`${import.meta.env.VITE_SERVER_URL}/users/delete-user-for-managers/${userId}`);
-  //     setSendNewRequest(prev => !prev)
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
+  const handleDeleteUser = async(userId) => {
+    try {
+      await axios.delete
+      (`${import.meta.env.VITE_SERVER_URL}/users/delete-user-for-managers/${userId}`);
+      setSendNewRequest(prev => !prev)
+    } catch (error) {
+      console.log(error)
+    }
+  }
 
 
   return (
