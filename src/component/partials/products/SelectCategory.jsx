@@ -18,20 +18,20 @@ function SelectCategory({chosenCategories ,setChosenCategories, values ,setValue
   
     const [data,isLoading,error] = useFetch(url)
 
-    // useEffect(() => {
-    //     const arr = [];
+    useEffect(() => {
+        const arr = [];
 
-    //     chosenCategories.map((cc) => {
-    //         arr.push({
-    //             category:cc._id
-    //         })
-    //     })
-    //     setValues(() => {
-    //         return{
-    //             ...values,categories:arr
-    //         }
-    //     })
-    // },[chosenCategories])
+        chosenCategories.map((cc) => {
+            arr.push({
+                category:cc._id
+            })
+        })
+        setValues(() => {
+            return{
+                ...values,categories:arr
+            }
+        })
+    },[chosenCategories])
 
    
 
